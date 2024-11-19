@@ -1,0 +1,58 @@
+/*---------- Global-style ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background-color: #F7ECDE;
+}
+
+/* --------END-Global------- */
+/* ! %%%%%%%% start-HEAD %%%%%%% */
+h1 {
+    width: 250px;
+    text-align: center;
+    margin: auto;
+    z-index: 2;
+}
+
+h1::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 10%;
+    background-color: #FEC260;
+    width: 100%;
+    height: 10px;
+    z-index: -1;
+    transition: all 1s;
+
+}
+
+.color:hover::after {
+    height: 80%;
+}
+
+.dotted {
+    border: 2px dotted black;
+}
+
+.table button {
+    width: 100px;
+    background-color: green;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+
+}
+
+.table button:hover {
+    background-color: rgb(111, 213, 114);
+
+}
+a{
+    text-decoration: none;
+}

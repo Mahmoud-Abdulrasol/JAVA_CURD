@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Mark</title>
+    <!--! @@@@@@@ Links @@@@@@@  -->
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/main.css">
+</head>
+
+<body>
+
+    <main>
+        <div class="container mt-5">
+            <div class="text">
+                <h1 class="color position-relative"> Book marker</h1>
+            </div>
+            <div class="dotted mt-3"></div>
+            <div class="header text-center py-3">
+                <h2 class="position-relative">Bookmark your favorite sites</h2>
+            </div>
+
+            <div class="inputs">
+                <div class="mb-4">
+                    <label for="exampleFormControlInput1" class="label fw-bold mb-2">Site Name</label>
+                    <input oninput="validName()" type="email" class="form-control" id="name"
+                        placeholder="Book Mark Name">
+                    <p id="alertName" class="alert alert-warning d-none">Incorrect data u must start from 3 char no
+                        spaces </p>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="label fw-bold mb-2">Site Url</label>
+                    <input oninput="validSite()" type="email" class="form-control" id="link" placeholder="Website Url">
+                    <p id="alertUrl" class="alert alert-warning d-none">Incorrect data u must be Url link start https Or http</p>
+                </div>
+                <div class="buttons text-center">
+                    <button onclick="addWebsite()" class="btn btn-outline-dark mt-4">Submit</button>
+                </div>
+            </div>
+            <div class="dotted mt-3"></div>
+            <table class="table table-hover mt-4 text-center">
+                <thead>
+                    <tr>
+                        <th scope="col">Index</th>
+                        <th scope="col">Website</th>
+                        <th scope="col">Visit</th>
+                        <th scope="col">Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="data">
+                  
+
+
+                </tbody>
+            </table>
+
+
+        </div>
+    </main>
+    <!-- ^ @@@@@@ JAVA_SCRIPT-Links @@@@@@ -->
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+
+</html>
